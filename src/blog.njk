@@ -1,0 +1,12 @@
+---
+title: "Blog"
+layout: "base.njk"
+---
+
+<h2>Blog Posts</h2>
+
+<ul>
+{% for post in collections.posts %}
+<li><a href="{{ post.url }}"</a>{{ post.data.title }}</li>
+{% endfor %}
+</ul>

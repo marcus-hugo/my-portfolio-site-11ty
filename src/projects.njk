@@ -1,0 +1,12 @@
+---
+title: "My Projects"
+layout: "base.njk"
+---
+
+<h2>Check out my latest projects!</h2>
+
+<ul>
+{% for project in collections.projects %}
+<li><a href="{{ project.url }}"</a>{{ project.data.title }}</li>
+{% endfor %}
+</ul>

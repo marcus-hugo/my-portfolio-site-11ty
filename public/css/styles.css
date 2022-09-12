@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  background: #212121;
+  color: #f5f5f5;
+}
+
+a {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
