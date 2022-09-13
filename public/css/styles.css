@@ -63,6 +63,18 @@ li {
   list-style: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -77,11 +89,14 @@ li {
   justify-content: center;
 }
 
+.gap-1rem {
+  gap: 1rem;
+}
+
 .header {
   border-bottom: 1px solid;
 }
 .header .nav-ul {
-  gap: 1rem;
   padding: 32px 0;
 }
 
