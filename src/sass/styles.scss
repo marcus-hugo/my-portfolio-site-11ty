@@ -1,1 +1,5 @@
-@import 'globals/base';
+@use 'globals/base';
+@use 'globals/reset';
+@use 'globals/utilities';
+@use 'components/header.scss';
+@use 'components/footer';

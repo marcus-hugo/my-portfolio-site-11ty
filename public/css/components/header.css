@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid;
+}
+.header .nav-ul {
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+/*# sourceMappingURL=header.css.map */
