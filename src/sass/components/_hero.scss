@@ -1,0 +1,19 @@
+.hero__title {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+.hero__subtitle {
+    background: -webkit-linear-gradient(65deg,rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.75rem;
+}
+
+.hero__img {
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f6599, transparent);
+}

@@ -1,3 +1,4 @@
+@use 'globals/variables';
 @use 'globals/reset';
 @use 'globals/base';
 @use 'globals/utilities';
@@ -5,3 +6,4 @@
 @use 'components/footer';
 @use 'components/project';
 @use 'components/post';
+@use 'components/hero';
