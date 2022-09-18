@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- skip link -->
@@ -38,14 +39,34 @@
         <h1>Blog</h1>
         
         
-<h2>Blog Posts</h2>
+<h2>Recent Posts</h2>
 
-<ul>
+<ul class="posts flex-col">
+    
+        <li class="li-post">
+    <article class="post flex-col snippet">
+        <img src="/assets/images/eleventy-logo.svg" alt="first blog image"></img>
+        <h3><a href="/blog/my-first-blog-post/">My First Post</a></h3>
+        <p>Jun 1, 2022</p>
+        <h4>by Marcus Hugo</h4>
+        <p>My first blog post about 11ty.</p>
+        <a href="/blog/my-first-blog-post/">Continue Reading</a>
+    </article>
+</li>
 
-<li><a href="/blog/my-first-blog-post/"</a>My First Blog Post</li>
+    
+        <li class="li-post">
+    <article class="post flex-col snippet">
+        <img src="/assets/images/eleventy-logo.svg" alt="second blog image"></img>
+        <h3><a href="/blog/my-second-blog-post/">My Second Blog Post</a></h3>
+        <p>Aug 2, 2022</p>
+        <h4>by Marcus Hugo</h4>
+        <p>My second blog post about 11ty.</p>
+        <a href="/blog/my-second-blog-post/">Continue Reading</a>
+    </article>
+</li>
 
-<li><a href="/blog/my-second-blog-post/"</a>My Second Blog Post</li>
-
+    
 </ul>
 
 
@@ -53,8 +74,19 @@
 
     <footer class="flex-row footer">
     <p>Copywrite 2022 Marcus Hugo.</p>
-    <p>Made with &#x1F497;.</p>
+    <p>Made with &#x1F497; in Collierville, TN.</p>
 </footer>
-    
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
 </body>
 </html>

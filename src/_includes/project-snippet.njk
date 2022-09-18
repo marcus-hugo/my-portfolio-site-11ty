@@ -1,0 +1,12 @@
+<li>
+    <article class="project flex-col snippet">
+        <img src="{{ project.data.image }}" alt=" {{ project.data.imageAlt }}"></img>
+        <h3><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+        <p>{{ project.data.description }}</p>
+        <a href="{{ project.url }}">See More...</a>
+        <div class="">
+            <a href="{{ project.data.live }}" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="{{ project.data.github }}" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+    </article>
+</li>

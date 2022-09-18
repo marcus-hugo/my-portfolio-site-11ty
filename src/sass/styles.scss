@@ -1,5 +1,7 @@
-@use 'globals/base';
 @use 'globals/reset';
+@use 'globals/base';
 @use 'globals/utilities';
 @use 'components/header.scss';
 @use 'components/footer';
+@use 'components/project';
+@use 'components/post';

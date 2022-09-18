@@ -3,10 +3,10 @@ title: "Blog"
 layout: "base.njk"
 ---
 
-<h2>Blog Posts</h2>
+<h2>Recent Posts</h2>
 
-<ul>
-{% for post in collections.posts %}
-<li><a href="{{ post.url }}"</a>{{ post.data.title }}</li>
-{% endfor %}
+<ul class="posts flex-col">
+    {% for post in collections.post %}
+        {% include 'article-snippet.njk' %}
+    {% endfor %}
 </ul>

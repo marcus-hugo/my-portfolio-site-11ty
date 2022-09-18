@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- skip link -->
@@ -38,7 +39,7 @@
         <h1></h1>
         
         
-<img class="hero__img" src="/assets/selfie-no-bg.png" alt="Marcus"></img>
+<img class="hero__img" src="/assets/images/selfie-no-bg.png" alt="Marcus"></img>
 <h1 class="hero__title">Hi, I'm Marcus!</h1>
 <h2 class="hero__subtitle">Frontend Developer.</h2>
 <p class="hero__text">I enjoy working from a design and bringing it to life on the web!</p>
@@ -48,8 +49,19 @@
 
     <footer class="flex-row footer">
     <p>Copywrite 2022 Marcus Hugo.</p>
-    <p>Made with &#x1F497;.</p>
+    <p>Made with &#x1F497; in Collierville, TN.</p>
 </footer>
-    
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
 </body>
 </html>

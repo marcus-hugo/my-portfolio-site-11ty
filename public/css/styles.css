@@ -1,3 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
 @media (min-width: 640px) {
   :root {
     font-size: 1.2rem;
@@ -37,32 +64,6 @@ a {
   color: inherit;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body, html {
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -93,6 +94,12 @@ li {
   gap: 1rem;
 }
 
+.snippet {
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 1rem 0.7rem;
+}
+
 .header {
   border-bottom: 1px solid;
 }
@@ -104,6 +111,28 @@ li {
   gap: 1rem;
   border-top: 1px solid;
   padding: 24px 0;
+}
+
+.projects {
+  padding-left: 0;
+}
+
+.project {
+  max-width: 65ch;
+}
+
+.posts {
+  padding-left: 0;
+}
+
+.li-post {
+  margin-bottom: 1rem;
+}
+
+.post {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1rem 0.7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

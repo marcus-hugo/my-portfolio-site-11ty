@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Agency Site</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- skip link -->
@@ -37,15 +38,37 @@
 
         <h1>Creative Agency Site</h1>
         
-        
-project content will go here.
+        <article>
+    <h1>Creative Agency Site</h1>
+    <figure>
+        <img src="/assets/images/creative-agency-website.png" alt="screenshot of Creative Agency site">
+        <figcaption>
+            screenshot of Creative Agency site
+        </figcaption>
+    </figure>
+
+    <p>project content will go here.</p>
+
+    
+</article>
 
     </main>
 
     <footer class="flex-row footer">
     <p>Copywrite 2022 Marcus Hugo.</p>
-    <p>Made with &#x1F497;.</p>
+    <p>Made with &#x1F497; in Collierville, TN.</p>
 </footer>
-    
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
 </body>
 </html>
