@@ -1,7 +1,21 @@
 .projects {
     padding-left: 0;
+    gap: 2rem;
 }
 
 .project {
     max-width: 65ch;
+
+    &__title {
+        text-decoration: none;
+    }
+
+    .links-wrapper {
+        padding: .5rem;
+
+        a {
+            text-decoration: 2px underline;
+            text-underline-offset: 5px;
+        }
+    }
 }

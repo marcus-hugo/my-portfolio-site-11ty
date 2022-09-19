@@ -1,8 +1,20 @@
+.hero__img {
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f6599, transparent);
+    margin: 5rem 0 3rem 0;
+    width: 250px;
+
+    @media(min-width: 768px) {
+        width: 320px;
+    }
+}
+
 .hero__title {
     font-size: 4rem;
     font-weight: 400;
     margin: 0;
     padding: 1rem 0 0 0;
+    color: var(--clr-accent);
 }
 
 .hero__subtitle {
@@ -13,7 +25,16 @@
     font-size: 1.75rem;
 }
 
-.hero__img {
-    border-radius: 50%;
-    background: linear-gradient(45deg, #7f6599, transparent);
+.hero__text {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.skills-section {
+    padding: 2rem 0;
+    margin: 0 0 1rem 0;
+}
+
+.skills-section-ul {
+    padding: 0;
 }

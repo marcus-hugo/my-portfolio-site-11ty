@@ -1,10 +1,10 @@
 <li>
     <article class="project flex-col snippet">
         <img src="{{ project.data.image }}" width="1280" height="720" alt=" {{ project.data.imageAlt }}"></img>
-        <h3><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
-        <p>{{ project.data.description }}</p>
-        <a href="{{ project.url }}">See More...</a>
-        <div class="">
+        <h3 class="project__title"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+        <p>{{ project.data.description }}<a href="{{ project.url }}">  See More...</a></p>
+        
+        <div class="links-wrapper flex-row gap-1rem">
             <a href="{{ project.data.live }}" target="_blank" rel="noopener noreferrer">Live</a>
             <a href="{{ project.data.github }}" target="_blank" rel="noopener noreferrer">Github</a>
         </div>
