@@ -7,6 +7,8 @@
   --clr-accent: #7f6599;
   --clr-accent-light: lightblue;
   --clr-accent-dark: rebeccapurple;
+  --clr-gradient-minus-90deg: linear-gradient(-90deg, #7f6599, transparent);
+  --clr-gradient-90deg: linear-gradient(90deg, #7f6599, transparent);
 }
 
 *,
@@ -102,6 +104,11 @@ a:active {
   color: var(--clr-accent-light);
 }
 
+a:focus {
+  outline: 2px dashed var(--clr-accent-light);
+  outline-offset: 7px;
+}
+
 .site__title {
   position: relative;
 }
@@ -119,12 +126,12 @@ a:active {
 
 .site__title::before {
   transform: translateX(-89px);
-  background: linear-gradient(-90deg, #7f6599, transparent);
+  background: var(--clr-gradient-minus-90deg);
 }
 
 .site__title::after {
   transform: translateX(10px);
-  background: linear-gradient(90deg, #7f6599, transparent);
+  background: var(--clr-gradient-90deg);
 }
 
 .sr-only {
