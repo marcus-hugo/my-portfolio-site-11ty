@@ -220,12 +220,7 @@ a:focus {
   border-radius: 50%;
   background: linear-gradient(45deg, #7f6599, transparent);
   margin: 5rem 0 3rem 0;
-  width: 250px;
-}
-@media (min-width: 768px) {
-  .hero__img {
-    width: 320px;
-  }
+  width: 150px;
 }
 
 .hero__title {
