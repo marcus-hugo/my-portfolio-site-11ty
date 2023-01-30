@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass --watch src/sass:src/css",
-    "build:sass": "sass src/sass:src/css",
+    "build:sass": "sass --style=compressed --no-source-map src/sass:src/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
