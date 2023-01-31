@@ -1,6 +1,6 @@
 ---
-title: Let's see how all this works again!
-description: Just testing Netlify CMS with Eleventy and GitHub.
+title: Phantom Sass Folders
+description: Empty sass folders with Chrome Inspector Sources Tab
 author: Marcus
 date: 2023-01-29T22:59:02.894Z
 tags:
