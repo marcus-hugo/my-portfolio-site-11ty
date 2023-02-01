@@ -1,8 +1,11 @@
 :root {
+  color-scheme: dark light;
   --clr-light: #f5f5f5;
   --clr-dark: #212121;
   --clr-grey-1: #d2d2d2;
   --clr-grey-2: #b5b5b5;
+  --clr-grey-3: #505050;
+  --clr-grey-4: #363636;
   --clr-focus: #ffab91;
   --clr-accent: #7f6599;
   --clr-accent-light: lightblue;
@@ -11,6 +14,18 @@
   --clr-gradient-90deg: linear-gradient(90deg, #7f6599, transparent);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--clr-light);
+    --text: var(--clr-dark);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--clr-dark);
+    --text: var(--clr-light);
+  }
+}
 *,
 *::before,
 *::after {
@@ -57,8 +72,8 @@ li {
 
 body {
   font-family: sans-serif;
-  background: var(--clr-dark);
-  color: var(--clr-grey-2);
+  background: var(--background);
+  color: var(--text);
 }
 
 main {
@@ -90,8 +105,8 @@ a {
 
 /* skip link */
 a, .skip-link {
+  color: inherit;
   text-decoration: none;
-  color: var(--clr-grey-1);
 }
 
 a:hover {
@@ -171,12 +186,85 @@ a:focus {
   width: 350px;
 }
 
+body.light-theme {
+  background: var(--clr-light);
+  color: var(--clr-grey-3);
+}
+
+p.light-theme {
+  color: var(--clr-grey-4);
+}
+
 .header {
   border-bottom: 1px solid;
   margin-bottom: 2rem;
 }
 .header .nav-ul {
   padding: 32px 0;
+}
+
+.toggle-switch-wrapper {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+}
+
+.toggle-switch__label {
+  font-size: 0.7rem;
+}
+
+.toggle-switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transform: translateY(-3px);
+}
+
+.toggle-switch__slider {
+  position: absolute;
+  border-radius: 1.25em;
+  background: var(--clr-grey-3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.toggle-switch__slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background: var(--clr-light);
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input[type=checkbox]:checked + .toggle-switch__slider {
+  background: var(--clr-accent);
+}
+
+input[type=checkbox]:checked + .toggle-switch__slider::before {
+  transform: translate(22px);
+}
+
+input[type=checkbox]:focus-visible + .toggle-switch__slider {
+  outline: dashed 3px #FF471A;
+  outline-offset: 5px;
 }
 
 .footer {

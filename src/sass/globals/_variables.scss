@@ -1,12 +1,29 @@
 :root {
+    color-scheme: dark light;
     --clr-light: #f5f5f5;
     --clr-dark: #212121;
     --clr-grey-1: #d2d2d2;
     --clr-grey-2: #b5b5b5;
+    --clr-grey-3: #505050;
+    --clr-grey-4: #363636;
     --clr-focus: #ffab91;
     --clr-accent: #7f6599;
     --clr-accent-light: lightblue;
     --clr-accent-dark: rebeccapurple;
     --clr-gradient-minus-90deg: linear-gradient(-90deg, #7f6599, transparent);
     --clr-gradient-90deg: linear-gradient(90deg, #7f6599, transparent);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+       --background: var(--clr-light);
+       --text: var(--clr-dark);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--clr-dark);
+        --text: var(--clr-light);
+    }
 }

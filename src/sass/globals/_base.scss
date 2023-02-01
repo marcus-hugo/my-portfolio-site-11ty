@@ -14,8 +14,8 @@
 
 body {
     font-family: sans-serif;
-    background: var(--clr-dark);
-    color: var(--clr-grey-2);
+    background: var(--background);
+    color: var(--text);
 }
 
 main {
@@ -47,9 +47,8 @@ a {
 
 /* skip link */
 a, .skip-link {
-    // color: inherit;
+    color: inherit;
     text-decoration: none;
-    color: var(--clr-grey-1);
 }
 
 a:hover {

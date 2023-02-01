@@ -2,7 +2,9 @@
 @use 'globals/reset';
 @use 'globals/base';
 @use 'globals/utilities';
+@use 'globals/themes.scss';
 @use 'components/header';
+@use 'components/toggle-switch';
 @use 'components/footer';
 @use 'components/projects-page';
 @use 'components/project';
