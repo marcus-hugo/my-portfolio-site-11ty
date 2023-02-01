@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marcus Hugo frontend developer portfolio">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- skip link -->
+    <a href="#main" class="skip-link sr-only">Skip to main content</a>
+
+    <header class="header">
+    <nav>
+        <ul class="nav-ul flex-row gap-1rem">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            <li>
+                <a href="/projects/">Projects</a>
+            </li>
+            <li>
+                <a href="/blog/">Blog</a>
+            </li>
+            <li>
+                <a href="/contact/">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="flex-col">
+        
+        
+<h1 class="site__title">My Projects</h1>
+<h2>Here's what I've been working on lately!</h2>
+
+<ul class="projects flex-row">
+
+   <li>
+    <article class="project flex-col snippet">
+        <img src="/assets/images/my-portfolio-site.png" width="1280" height="720" alt=" portfolio page"></img>
+        <h3 class="project__title"><a href="/projects/newest-project/">Newest Project</a></h3>
+        <p>Test from Eleventy CMS.<a href="/projects/newest-project/">  See More...</a></p>
+        
+        <div class="links-wrapper flex-row gap-1rem">
+            <a href="" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+    </article>
+</li>
+
+   <li>
+    <article class="project flex-col snippet">
+        <img src="/assets/images/creative-agency-website.png" width="1280" height="720" alt=" screenshot of Creative Agency site"></img>
+        <h3 class="project__title"><a href="/projects/my-first-project/">Creative Agency Site</a></h3>
+        <p>Three sections, a mobile menu, three image carousel, and built with a webpack workflow.<a href="/projects/my-first-project/">  See More...</a></p>
+        
+        <div class="links-wrapper flex-row gap-1rem">
+            <a href="https://marcus-hugo.github.io/creative-agency/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="https://github.com/marcus-hugo/creative-single-page-site" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+    </article>
+</li>
+
+   <li>
+    <article class="project flex-col snippet">
+        <img src="/assets/images/my-portfolio-site.png" width="1280" height="720" alt=" desktop view of marcus website"></img>
+        <h3 class="project__title"><a href="/projects/my-second-project/">My Portfolio Site</a></h3>
+        <p>My new portfolio site built with Sass and Bem!<a href="/projects/my-second-project/">  See More...</a></p>
+        
+        <div class="links-wrapper flex-row gap-1rem">
+            <a href="" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+    </article>
+</li>
+
+</ul>
+
+    </main>
+
+    <footer class="flex-row footer">
+    <p>© 2023 Marcus Hugo.</p>
+    <p>Made with &#x1F497; in Collierville, TN.</p>
+</footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
+</body>
+</html>

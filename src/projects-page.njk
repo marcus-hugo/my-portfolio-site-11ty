@@ -6,7 +6,7 @@ layout: "base.njk"
 <h1 class="site__title">{{ title }}</h1>
 <h2>Here's what I've been working on lately!</h2>
 
-<ul class="projects flex-col">
+<ul class="projects flex-row">
 {% for project in collections.project %}
    {% include 'project-snippet.njk' %}
 {% endfor %}

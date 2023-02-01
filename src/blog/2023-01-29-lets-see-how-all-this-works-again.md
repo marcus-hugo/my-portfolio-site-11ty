@@ -1,5 +1,5 @@
 ---
-title: Let's see how all this works again!
+title: Empty Sass Folders!
 description: Just testing Netlify CMS with Eleventy and GitHub.
 author: Marcus
 date: 2023-01-29T22:59:02.894Z

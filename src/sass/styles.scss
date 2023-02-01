@@ -2,8 +2,10 @@
 @use 'globals/reset';
 @use 'globals/base';
 @use 'globals/utilities';
-@use 'components/header.scss';
+@use 'components/header';
 @use 'components/footer';
+@use 'components/projects-page';
 @use 'components/project';
-@use 'components/post';
+@use 'components/blog-page';
+@use 'components/contact-page';
 @use 'components/hero';

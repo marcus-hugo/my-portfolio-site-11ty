@@ -1,12 +1,12 @@
 ---
-title: "Blog"
+title: "My Blog"
 layout: "base.njk"
 ---
 
 <h1 class="site__title">{{ title }}</h1>
 <h2>Recent Posts</h2>
 
-<ul class="posts flex-col">
+<ul class="posts flex-row">
     {% for post in collections.post %}
         {% include 'article-snippet.njk' %}
     {% endfor %}
