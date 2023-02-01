@@ -1,6 +1,6 @@
 ---
-title: Empty Sass Folders!
-description: Just testing Netlify CMS with Eleventy and GitHub.
+title: Phantom Sass Folders
+description: Empty sass folders with Chrome Inspector Sources Tab
 author: Marcus
 date: 2023-01-29T22:59:02.894Z
 tags:
@@ -8,4 +8,6 @@ tags:
 image: /assets/images/question-diamond.svg
 imageAlt: question mark
 ---
-I﻿ keep seeing my sass folders when using Chrome Sources tab.  It's not shown when using the Network tab?  I think it has something to do with using Netlify's build command?
+W﻿hy do I keep seeing my projects empty sass folders when using Chrome Inspector Sources tab?  They are not shown with the Network tab.
+
+I﻿ found that I had sourcemaps enabled.  To confirm this, I disabled them with `--no-source-map` in the sass build script. Now they are gone!
