@@ -14,7 +14,10 @@
     <!-- skip link -->
     <a href="#main" class="skip-link sr-only">Skip to main content</a>
 
-    <header class="header">
+    <header class="header flex-row">
+
+    <a class="header__logo" href="index.html">MH</a>
+    
     <nav>
         <ul class="nav-ul flex-row gap-1rem">
             <li>
@@ -34,21 +37,7 @@
             </li>
         </ul>
     </nav>
-     <div class="toggle-switch-wrapper">
-            <span class="toggle-switch__label">Dark theme</span>
-            <label class="toggle-switch" for="theme-toggle">
-                <input 
-                    class="toggle-switch__input" 
-                    id="theme-toggle"
-                    title="Toggles light and dark"
-                    role="switch" 
-                    type="checkbox"
-                    aria-checked="false"
-                    aria-live="polite"
-                >
-                <span class="toggle-switch__slider"></span>
-            </label>
-        </div>
+
 </header>
 
     <main class="flex-col">
@@ -103,11 +92,10 @@
     </main>
 
     <footer class="flex-row footer">
-    <p>© 2023 Marcus Hugo.</p>
-    <p>Made with &#x1F497; in Collierville, TN.</p>
+    <small><p>© 2023 Marcus Hugo.</p></small>
+    <small><p>Made with &#x1F497; in Collierville, TN.</p></small>
 </footer>
 
-    <script src="../js/app.js"></script>
     <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {

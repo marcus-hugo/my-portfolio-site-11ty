@@ -14,7 +14,10 @@
     <!-- skip link -->
     <a href="#main" class="skip-link sr-only">Skip to main content</a>
 
-    <header class="header">
+    <header class="header flex-row">
+
+    <a class="header__logo" href="index.html">MH</a>
+    
     <nav>
         <ul class="nav-ul flex-row gap-1rem">
             <li>
@@ -34,21 +37,7 @@
             </li>
         </ul>
     </nav>
-     <div class="toggle-switch-wrapper">
-            <span class="toggle-switch__label">Dark theme</span>
-            <label class="toggle-switch" for="theme-toggle">
-                <input 
-                    class="toggle-switch__input" 
-                    id="theme-toggle"
-                    title="Toggles light and dark"
-                    role="switch" 
-                    type="checkbox"
-                    aria-checked="false"
-                    aria-live="polite"
-                >
-                <span class="toggle-switch__slider"></span>
-            </label>
-        </div>
+
 </header>
 
     <main class="flex-col">
@@ -62,10 +51,10 @@
         <li>
     <article class="post flex-col snippet">
         <img src="/assets/images/eleventy-logo.svg" width="150" height="150" alt="first blog image"></img>
-        <h3><a href="/blog/my-first-blog-post/">My First Post</a></h3>
-        <p>Jun 1, 2022</p>
-        <h4>by Marcus Hugo</h4>
-        <p>My first blog post about 11ty.</p>
+        <h3 class="post__title"><a href="/blog/my-first-blog-post/">My First Post</a></h3>
+        <p class="post__date">Jun 1, 2022</p>
+        <h4 class="post__author">by Marcus Hugo</h4>
+        <p class="post__description">My first blog post about 11ty.</p>
         <a href="/blog/my-first-blog-post/">Continue Reading</a>
     </article>
 </li>
@@ -74,10 +63,10 @@
         <li>
     <article class="post flex-col snippet">
         <img src="/assets/images/eleventy-logo.svg" width="150" height="150" alt="second blog image"></img>
-        <h3><a href="/blog/my-second-blog-post/">My Second Blog Post</a></h3>
-        <p>Aug 2, 2022</p>
-        <h4>by Marcus Hugo</h4>
-        <p>My second blog post about 11ty.</p>
+        <h3 class="post__title"><a href="/blog/my-second-blog-post/">My Second Blog Post</a></h3>
+        <p class="post__date">Aug 2, 2022</p>
+        <h4 class="post__author">by Marcus Hugo</h4>
+        <p class="post__description">My second blog post about 11ty.</p>
         <a href="/blog/my-second-blog-post/">Continue Reading</a>
     </article>
 </li>
@@ -86,10 +75,10 @@
         <li>
     <article class="post flex-col snippet">
         <img src="/assets/images/selfie-no-bg.png" width="150" height="150" alt="Marcus smiling"></img>
-        <h3><a href="/blog/2022-09-18-new-blog-post/">New Blog Post</a></h3>
-        <p>Sep 18, 2022</p>
-        <h4>by Marcus</h4>
-        <p>Test from Netlify cms.</p>
+        <h3 class="post__title"><a href="/blog/2022-09-18-new-blog-post/">New Blog Post</a></h3>
+        <p class="post__date">Sep 18, 2022</p>
+        <h4 class="post__author">by Marcus</h4>
+        <p class="post__description">Test from Netlify cms.</p>
         <a href="/blog/2022-09-18-new-blog-post/">Continue Reading</a>
     </article>
 </li>
@@ -98,10 +87,10 @@
         <li>
     <article class="post flex-col snippet">
         <img src="/assets/images/question-diamond.svg" width="150" height="150" alt="question mark"></img>
-        <h3><a href="/blog/2023-01-29-lets-see-how-all-this-works-again/">Phantom Sass Folders</a></h3>
-        <p>Jan 29, 2023</p>
-        <h4>by Marcus</h4>
-        <p>Empty sass folders with Chrome Inspector Sources Tab</p>
+        <h3 class="post__title"><a href="/blog/2023-01-29-lets-see-how-all-this-works-again/">Phantom Sass Folders</a></h3>
+        <p class="post__date">Jan 29, 2023</p>
+        <h4 class="post__author">by Marcus</h4>
+        <p class="post__description">Empty sass folders with Chrome Inspector Sources Tab</p>
         <a href="/blog/2023-01-29-lets-see-how-all-this-works-again/">Continue Reading</a>
     </article>
 </li>
@@ -113,11 +102,10 @@
     </main>
 
     <footer class="flex-row footer">
-    <p>© 2023 Marcus Hugo.</p>
-    <p>Made with &#x1F497; in Collierville, TN.</p>
+    <small><p>© 2023 Marcus Hugo.</p></small>
+    <small><p>Made with &#x1F497; in Collierville, TN.</p></small>
 </footer>
 
-    <script src="../js/app.js"></script>
     <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {

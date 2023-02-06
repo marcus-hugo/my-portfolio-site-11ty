@@ -1,4 +1,7 @@
-<header class="header">
+<header class="header flex-row">
+
+    <a class="header__logo" href="{{ 'index.html' | url }}">MH</a>
+    
     <nav>
         <ul class="nav-ul flex-row gap-1rem">
             <li>
@@ -18,19 +21,5 @@
             </li>
         </ul>
     </nav>
-     <div class="toggle-switch-wrapper">
-            <span class="toggle-switch__label">Dark theme</span>
-            <label class="toggle-switch" for="theme-toggle">
-                <input 
-                    class="toggle-switch__input" 
-                    id="theme-toggle"
-                    title="Toggles light and dark"
-                    role="switch" 
-                    type="checkbox"
-                    aria-checked="false"
-                    aria-live="polite"
-                >
-                <span class="toggle-switch__slider"></span>
-            </label>
-        </div>
+
 </header>

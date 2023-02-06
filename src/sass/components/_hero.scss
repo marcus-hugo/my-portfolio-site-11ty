@@ -1,36 +1,40 @@
+.hero__img-wrapper {
+  padding: 1rem 0;
+}
+
 .hero__img {
-    border-radius: 50%;
-    background: linear-gradient(45deg, #7f6599, transparent);
-    margin: 5rem 0 3rem 0;
-    width: 150px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #7f6599, transparent);
+  // margin: 5rem 0 3rem 0;
+  width: 150px;
 }
 
 .hero__title {
-    font-size: 4rem;
-    font-weight: 400;
-    margin: 0;
-    padding: 1rem 0 0 0;
-    color: var(--clr-accent);
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem 0 0 0;
+  color: var(--clr-accent);
 }
 
 .hero__subtitle {
-    background: -webkit-linear-gradient(65deg,rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.75rem;
+  background: -webkit-linear-gradient(65deg, rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.75rem;
 }
 
 .hero__text {
-    text-align: center;
-    margin: 0 0 2rem 0;
+  text-align: center;
+  margin: 0 0 2rem 0;
 }
 
 .skills-section {
-    padding: 2rem 0;
-    margin: 0 0 1rem 0;
+  padding: 2rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .skills-section-ul {
-    padding: 0;
+  padding: 0;
 }

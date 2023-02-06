@@ -1,27 +1,44 @@
+/* https://web.dev/prefers-reduced-motion/#remove-motion-on-the-web */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body, html {
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
+/* For responsive images */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }

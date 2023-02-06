@@ -1,16 +1,13 @@
 .project {
-    max-width: 65ch;
+  max-width: 65ch;
+  background: var(--card-bg);
+  color: var(--card-clr);
 
-    &__title {
-        text-decoration: none;
-    }
+  &__title {
+    text-decoration: none;
+  }
 
-    .links-wrapper {
-        padding: .5rem;
-
-        a {
-            text-decoration: 2px underline;
-            text-underline-offset: 5px;
-        }
-    }
+  .links-wrapper {
+    padding: 0.5rem;
+  }
 }
