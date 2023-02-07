@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-  color: var(--clr-grey-3);
+  color: var(--heading-3);
 }
 
 /* For comfortable readability */
@@ -54,10 +54,6 @@ p {
 *::selection {
   color: var(--selection-clr);
   background: var(--selection-bg);
-}
-
-a {
-  color: inherit;
 }
 
 /* Skip link */
