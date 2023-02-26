@@ -1,5 +1,5 @@
 :root {
-  color-scheme: dark light;
+  // color-scheme: dark light;
   --clr-light: #f5f5f5;
   --clr-dark: #212121;
   --clr-grey-0: #e5e5e5;
@@ -21,6 +21,8 @@
   :root {
     --background: var(--clr-light);
     --text: var(--clr-dark);
+    --menu-bg: var(--clr-light);
+    --menu-clr: var(--clr-dark);
     --heading-1: var(--clr-grey-4);
     --heading-2: var(--clr-grey-3);
     --heading-3: var(--clr-grey-3);
@@ -35,6 +37,8 @@
   :root {
     --background: var(--clr-dark);
     --text: var(--clr-light);
+    --menu-bg: var(--clr-dark);
+    --menu-clr: var(--clr-light);
     --heading-1: var(--clr-grey-1);
     --heading-2: var(--clr-grey-2);
     --heading-3: var(--clr-grey-2);

@@ -3,6 +3,34 @@ body.light-theme {
   color: var(--clr-grey-3);
 }
 
+body.dark-theme {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+p.light-theme {
+  color: var(--clr-grey-4);
+}
+
+.nav.light-theme {
+  background: var(--clr-light);
+}
+
+.nav.dark-theme {
+  background: var(--clr-dark);
+}
+
+.project.light-theme {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  box-shadow: 2px 1px 7px -3px var(--clr-grey-8);
+}
+
+.project.dark-theme {
+  background: var(--clr-grey-8);
+  color: var(--clr-grey-0);
+}
+
 *::selection.light-theme {
   color: var(--clr-light);
   background: var(--clr-dark);
