@@ -1,6 +1,8 @@
 const body = document.querySelector("body")
 const nav = document.querySelector(".nav")
+const pageTitle = document.querySelector(".site__title")
 const projects = document.querySelectorAll(".project")
+const posts = document.querySelectorAll(".post")
 const checkbox = document.getElementById("theme-toggle")
 const toggle = document.querySelector(".toggle-switch__input")
 var mediaQueryList = window.matchMedia("(prefers-color-scheme: light)")
@@ -16,9 +18,17 @@ function addLightTheme() {
   nav.classList.remove("dark-theme")
   nav.classList.add("light-theme")
 
+  pageTitle.classList.remove("dark-theme")
+  pageTitle.classList.add("light-theme")
+
   for (let i = 0; i < projects.length; i++) {
     projects[i].classList.remove("dark-theme")
     projects[i].classList.add("light-theme")
+  }
+
+  for (let i = 0; i < posts.length; i++) {
+    posts[i].classList.remove("dark-theme")
+    posts[i].classList.add("light-theme")
   }
 }
 
@@ -29,9 +39,17 @@ function addDarkTheme() {
   nav.classList.remove("light-theme")
   nav.classList.add("dark-theme")
 
+  pageTitle.classList.remove("light-theme")
+  pageTitle.classList.add("dark-theme")
+
   for (let i = 0; i < projects.length; i++) {
     projects[i].classList.remove("light-theme")
     projects[i].classList.add("dark-theme")
+  }
+
+  for (let i = 0; i < posts.length; i++) {
+    posts[i].classList.remove("light-theme")
+    posts[i].classList.add("dark-theme")
   }
 }
 

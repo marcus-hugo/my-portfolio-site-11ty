@@ -1,38 +1,37 @@
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }
 
 .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .gap-1rem {
-    gap: 1rem;
+  gap: 1rem;
 }
 
 .snippet {
-    border-radius: 7px;
-    padding: 1rem .7rem;
-    // box-shadow: 2px 1px 5px 1px;
-    width: 350px;
-    height: 480px;
-    background: #2b2b2b;
+  border-radius: 7px;
+  padding: 1rem 0.7rem;
+  width: 350px;
+  height: 480px;
+  background: #2b2b2b;
 }
