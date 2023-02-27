@@ -1,0 +1,55 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/admin/</loc>
+            <lastmod>2022-09-18T14:42:01.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/projects/newest-project/</loc>
+            <lastmod>2022-09-18T15:40:16.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/</loc>
+            <lastmod>2022-09-18T20:50:39.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/about-page/</loc>
+            <lastmod>2022-09-18T20:52:31.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/contact-page/</loc>
+            <lastmod>2022-09-18T20:53:12.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/projects-page/</loc>
+            <lastmod>2022-09-18T21:34:10.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/blog-page/</loc>
+            <lastmod>2022-09-18T21:35:57.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/projects/my-first-project/</loc>
+            <lastmod>2022-09-19T16:02:22.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/projects/my-second-project/</loc>
+            <lastmod>2022-09-19T16:03:29.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/blog/2023-01-29-lets-see-how-all-this-works-again/</loc>
+            <lastmod>2023-01-29T22:59:02.894Z</lastmod>
+        </url>
+    
+</urlset>

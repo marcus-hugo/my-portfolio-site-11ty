@@ -1,0 +1,4 @@
+Sitemap: https://serene-nougat-b44db7.netlify.app/sitemap.xml
+
+User-agent: *
+Disallow:
