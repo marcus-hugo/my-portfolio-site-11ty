@@ -502,7 +502,7 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
 }
 
 .posts {
-  padding-left: 0;
+  padding: 0 1rem;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -510,6 +510,19 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
 .post {
   background: var(--card-bg);
   color: var(--card-clr);
+  padding: 1rem 0.7rem;
+}
+.post__title {
+  text-align: left;
+  font-size: 2rem;
+  padding: 0 0.7rem;
+  color: var(--clr-accent);
+}
+.post__date {
+  font-size: 1.15rem;
+}
+.post__description {
+  font-size: 1.25rem;
 }
 
 .hero__img-wrapper {

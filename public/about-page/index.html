@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="/js/themeToggle.js"></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Marcus Hugo frontend developer portfolio" />
-    <meta name="color-scheme" theme="dark light" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marcus Hugo frontend developer portfolio">
+    <meta name="color-scheme" theme="dark light">
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="NOTDCAQI" defer></script>
     <!-- / Fathom -->
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <title>About Me</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <!-- skip link -->
     <a href="#main" class="skip-link sr-only">Skip to main content</a>
 
     <header class="header flex-row">
-      <a class="header__logo" href="/index.html">MH</a>
-      <div class="flex-row header__menu-wrapper">
+    
+    <a class="header__logo" href="/index.html">MH</a>
+    <div class="flex-row header__menu-wrapper">
         <nav class="nav">
-          <ul class="nav-ul flex-row gap-1rem">
+        <ul class="nav-ul flex-row gap-1rem">
             <li>
-              <a href="/index.html">Home</a>
+                <a href="/index.html">Home</a>
             </li>
             <li>
-              <a href="/about-page/">About</a>
+                <a href="/about-page/">About</a>
             </li>
             <li>
-              <a href="/projects-page/">Projects</a>
+                <a href="/projects-page/">Projects</a>
             </li>
             <li>
-              <a href="/blog-page/">Blog</a>
+                <a href="/blog-page/">Blog</a>
             </li>
             <li>
-              <a href="/contact-page/">Contact</a>
+                <a href="/contact-page/">Contact</a>
             </li>
-          </ul>
-        </nav>
+        </ul>
+    </nav>
 
-        <div class="controls-wrapper flex-row">
+    <div class="controls-wrapper flex-row">
           <div class="toggle-switch-wrapper">
             <i class="bi bi-sun"></i>
             <label class="toggle-switch" for="theme-toggle">
@@ -61,41 +61,44 @@
             <span class="hamburger"></span>
           </button>
         </div>
-      </div>
-    </header>
+    </div>
+    
+</header>
 
     <main class="flex-col">
-      <h1 class="site__title">About Me</h1>
+        
+        
+<h1 class="site__title">About Me</h1>
 
-      <p>
-        <img class="about-text__image" width="640" height="640" src="/assets/images/new-selfie-sm.png" alt="Marcus Hugo" />
-        My first introduction to programming was in highschool. I wanted to try something different other than art. I Didn't quite get the hang of it then. Though, later in my college years, I remember discovering the browser inspector tool and wondered what all that code was! I spent some time learning a little bit of HTML then.
-      </p>
+<p>
+    <img class="about-text__image" width="640" height="640" src="/assets/images/new-selfie-sm.png" alt="Marcus Hugo" />
+    My first introduction to programming was in highschool. I wanted to try something different other than art. I Didn't quite get the hang of it then. Though, later in my college years, I remember discovering the browser inspector tool and wondered what all that code was! I spent some time learning a little bit of HTML then.</p>
 
-      <p>Many years later, I built my own PC, later studied for the CompTIA A+ exam, then learned to use the command line, which led me back to web development, which reminded me of typing out html tags. Once I discovered CSS, it clicked for me! It was the connection of writing HTML <em>and CSS</em>, then seeing <em>visually </em> the output that had me hooked!</p>
+<p>Many years later, I built my own PC, later studied for the CompTIA A+ exam, then learned to use the command line, which led me back to web development, which reminded me of typing out html tags. Once I discovered CSS, it clicked for me! It was the connection of writing HTML <em>and CSS</em>, then seeing <em>visually </em> the output that had me hooked!</p>
 
-      <p>After learning the basics, many sources say to start building projects. And it's true! I've been building projects from Frontend Mentor, Scrimba, and Udemy to name a few.</p>
+<p>After learning the basics, many sources say to start building projects. And it's true! I've been building projects from Frontend Mentor, Scrimba, and Udemy to name a few.</p>
 
-      <p>I'm currently learning how powerful templating languages are with static site generators, specifically 11ty with Netlify and Netlify CMS. On the server side I'm also learning Wordpress development with PHP.</p>
+<p>I'm currently learning how powerful templating languages are with static site generators, specifically 11ty with Netlify and Netlify CMS. On the server side I'm also learning Wordpress development with PHP.</p>
+
     </main>
 
     <footer class="flex-row footer">
-      <small><p>© 2023 Marcus Hugo.</p></small>
-      <small><p>Made with &#x1F497; in Collierville, TN.</p></small>
-    </footer>
+    <small><p>© 2023 Marcus Hugo.</p></small>
+    <small><p>Made with &#x1F497; in Collierville, TN.</p></small>
+</footer>
 
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/"
-            })
-          }
-        })
-      }
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
     </script>
-
+    <script src="/js/themeToggle.js"></script>
     <script src="/js/mobileMenu.js"></script>
-  </body>
+</body>
 </html>
