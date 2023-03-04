@@ -290,6 +290,17 @@ p.light-theme {
     opacity: 100%;
   }
 }
+@keyframes wave {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(7deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
 .header {
   box-shadow: 0px 0px 2px -1px;
   justify-content: space-between;
@@ -527,9 +538,10 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
 
 .hero__img-wrapper {
   padding: 1rem 0;
+  animation: 1500ms 3 forwards wave;
 }
 
-.hero_wavy-hand {
+.hero__wavy-hand {
   font-size: 45px;
   opacity: 0;
   animation: fade-in 300ms ease-in 1000ms forwards;
@@ -565,3 +577,5 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   opacity: 0;
   animation: fade-in 300ms ease-in 2300ms forwards;
 }
+
+/*# sourceMappingURL=styles.css.map */

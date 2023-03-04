@@ -1,8 +1,9 @@
 .hero__img-wrapper {
   padding: 1rem 0;
+  animation: 1500ms 3 forwards wave;
 }
 
-.hero_wavy-hand {
+.hero__wavy-hand {
   font-size: 45px;
   opacity: 0;
   animation: fade-in 300ms ease-in 1000ms forwards;
