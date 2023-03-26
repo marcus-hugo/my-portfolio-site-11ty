@@ -22,11 +22,6 @@
         </url>
     
         <url>
-            <loc>https:serene-nougat-b44db7.netlify.app/contact-page/</loc>
-            <lastmod>2022-09-18T20:53:12.000Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https:serene-nougat-b44db7.netlify.app/projects-page/</loc>
             <lastmod>2022-09-18T21:34:10.000Z</lastmod>
         </url>
@@ -54,6 +49,11 @@
         <url>
             <loc>https:serene-nougat-b44db7.netlify.app/blog/2023-03-25-what-next-to-learn-about-eleventy/</loc>
             <lastmod>2023-03-25T19:05:38.032Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https:serene-nougat-b44db7.netlify.app/contact-page/</loc>
+            <lastmod>2023-03-26T22:35:05.202Z</lastmod>
         </url>
     
 </urlset>
