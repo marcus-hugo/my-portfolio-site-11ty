@@ -12,7 +12,9 @@
   --clr-focus: #ff471a;
   --clr-accent: #7f6599;
   --clr-accent-light: lightblue;
+  --clr-accent-light-2: #a5f3fc;
   --clr-accent-dark: rebeccapurple;
+  --clr-accent-dark-2: #0e7490;
   --clr-gradient-minus-90deg: linear-gradient(-90deg, #7f6599, transparent);
   --clr-gradient-90deg: linear-gradient(90deg, #7f6599, transparent);
 }
@@ -30,6 +32,7 @@
     --card-bg: var(--clr-light);
     --selection-clr: var(--clr-light);
     --selection-bg: var(--clr-dark);
+    --ul-clr: var(--clr-accent-dark-2);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -45,6 +48,7 @@
     --card-bg: var(--clr-grey-8);
     --selection-clr: var(--clr-dark);
     --selection-bg: var(--clr-light);
+    --ul-clr: var(--clr-accent-light-2);
   }
 }
 /* https://web.dev/prefers-reduced-motion/#remove-motion-on-the-web */
@@ -87,10 +91,6 @@ img {
   display: block;
 }
 
-li {
-  list-style: none;
-}
-
 /* For responsive text. -will change to using clamp soon. */
 body {
   font-family: "Roboto", "sans-serif";
@@ -106,7 +106,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-align: center;
+  padding: 0 1rem;
 }
 
 h1 {
@@ -215,6 +215,12 @@ a:focus-visible {
   background: #2b2b2b;
 }
 
+.container {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
 body.light-theme {
   background: var(--clr-light);
   color: var(--clr-grey-3);
@@ -235,6 +241,14 @@ body.dark-theme {
 
 p.light-theme {
   color: var(--clr-grey-4);
+}
+
+.hero__ul.light-theme {
+  color: red;
+}
+
+.hero__ul.dark-theme {
+  color: blue;
 }
 
 .nav.light-theme {
@@ -331,6 +345,7 @@ p.light-theme {
   padding: 0;
   height: 100%;
   gap: 1rem;
+  list-style: none;
 }
 
 /* Button */
@@ -484,6 +499,15 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   padding: 2rem 0;
   text-align: center;
 }
+.footer ul.flex-row {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .footer div,
+  .footer ul {
+    flex-direction: column;
+  }
+}
 
 .about-text__image {
   width: 150px;
@@ -576,6 +600,10 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   margin: 1rem 0 0 0;
   opacity: 0;
   animation: fade-in 300ms ease-in 2300ms forwards;
+}
+
+.hero__ul {
+  color: var(--ul-clr);
 }
 
 /*# sourceMappingURL=styles.css.map */

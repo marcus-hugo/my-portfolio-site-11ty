@@ -20,6 +20,14 @@ p.light-theme {
   color: var(--clr-grey-4);
 }
 
+.hero__ul.light-theme {
+  color: red;
+}
+
+.hero__ul.dark-theme {
+  color: blue;
+}
+
 .nav.light-theme {
   background: var(--clr-light);
 }

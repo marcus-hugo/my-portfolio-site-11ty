@@ -5,6 +5,7 @@ const projects = document.querySelectorAll(".project")
 const posts = document.querySelectorAll(".post")
 const checkbox = document.getElementById("theme-toggle")
 const toggle = document.querySelector(".toggle-switch__input")
+const heroUl = document.querySelector(".hero__ul")
 var mediaQueryList = window.matchMedia("(prefers-color-scheme: light)")
 let isToggleChecked = toggle.getAttribute("aria-checked")
 let darkMode = localStorage.getItem("darkMode")
@@ -20,6 +21,9 @@ function addLightTheme() {
 
   pageTitle.classList.remove("dark-theme")
   pageTitle.classList.add("light-theme")
+
+  heroUl.classList.remove("dark-theme")
+  heroUl.classList.add("light-theme")
 
   for (let i = 0; i < projects.length; i++) {
     projects[i].classList.remove("dark-theme")
@@ -41,6 +45,9 @@ function addDarkTheme() {
 
   pageTitle.classList.remove("light-theme")
   pageTitle.classList.add("dark-theme")
+
+  heroUl.classList.remove("light-theme")
+  heroUl.classList.add("dark-theme")
 
   for (let i = 0; i < projects.length; i++) {
     projects[i].classList.remove("light-theme")

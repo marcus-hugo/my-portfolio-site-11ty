@@ -2,4 +2,15 @@
   box-shadow: 0px 0px 2px -1px;
   padding: 2rem 0;
   text-align: center;
+
+  ul.flex-row {
+    list-style: none;
+  }
+
+  @media (max-width: 768px) {
+    div,
+    ul {
+      flex-direction: column;
+    }
+  }
 }

@@ -13,7 +13,10 @@
   --clr-focus: #ff471a;
   --clr-accent: #7f6599;
   --clr-accent-light: lightblue;
+  --clr-accent-light-2: #a5f3fc;
   --clr-accent-dark: rebeccapurple;
+  --clr-accent-dark-2: #0e7490;
+
   --clr-gradient-minus-90deg: linear-gradient(-90deg, #7f6599, transparent);
   --clr-gradient-90deg: linear-gradient(90deg, #7f6599, transparent);
 }
@@ -31,6 +34,7 @@
     --card-bg: var(--clr-light);
     --selection-clr: var(--clr-light);
     --selection-bg: var(--clr-dark);
+    --ul-clr: var(--clr-accent-dark-2);
   }
 }
 
@@ -47,5 +51,6 @@
     --card-bg: var(--clr-grey-8);
     --selection-clr: var(--clr-dark);
     --selection-bg: var(--clr-light);
+    --ul-clr: var(--clr-accent-light-2);
   }
 }
