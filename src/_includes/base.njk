@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
-    {# <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> #}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- skip link -->
@@ -33,7 +33,7 @@
 
     {% include 'footer.njk' %}
 
-    {# <script>
+    <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
             if (!user) {
@@ -43,10 +43,8 @@
             }
             });
         }
-    </script> #}
-      {# Goole Fonts #}
+    </script>
    
-    <script src="/js/themeToggle.js"></script>
     <script src="/js/mobileMenu.js"></script>
 </body>
 </html>
