@@ -152,6 +152,11 @@ a:focus-visible {
   outline-offset: 7px;
 }
 
+:is(p) a {
+  text-decoration: underline;
+  color: var(--ul-clr);
+}
+
 .site__title {
   position: relative;
 }
@@ -523,6 +528,9 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   gap: 1rem;
   flex-wrap: wrap;
 }
+.projects li {
+  list-style: none;
+}
 
 .project {
   max-width: 65ch;
@@ -585,23 +593,26 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
 }
 
 .hero__subtitle {
-  background: -webkit-linear-gradient(65deg, rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 1.75rem;
   font-weight: 400;
   opacity: 0;
   animation: fade-in 300ms ease-in 2000ms forwards;
 }
 
+.hero__sub-title-3 {
+  opacity: 0;
+  animation: fade-in 300ms ease-in 2200ms forwards;
+}
+
 .hero__text {
   text-align: center;
   margin: 1rem 0 0 0;
   opacity: 0;
-  animation: fade-in 300ms ease-in 2300ms forwards;
+  animation: fade-in 300ms ease-in 2500ms forwards;
 }
 
 .hero__ul {
   color: var(--ul-clr);
+  opacity: 0;
+  animation: fade-in 300ms ease-in 2700ms forwards;
 }

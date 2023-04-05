@@ -6,4 +6,5 @@ tags:
 image: /assets/images/my-portfolio-site.png
 imageAlt: portfolio page
 ---
-T﻿his is *so* **AWESOME** and I hope it works!
+
+This is _so_ **AWESOME** and I hope it works!

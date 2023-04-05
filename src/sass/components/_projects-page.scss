@@ -2,4 +2,8 @@
   padding-left: 0;
   gap: 1rem;
   flex-wrap: wrap;
+
+  li {
+    list-style: none;
+  }
 }

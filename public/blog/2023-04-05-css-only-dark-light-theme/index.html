@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <title>Newest Project</title>
+    <title>CSS Only Dark/Light Theme</title>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -60,16 +60,36 @@
 
     <main class="flex-col">
         
-        <article>
-    <h1>Newest Project</h1>
-    <figure>
-        <img src="/assets/images/my-portfolio-site.png" alt="portfolio page">
-        <figcaption>
-            portfolio page
-        </figcaption>
-    </figure>
+        
+<article>
+    <h1>CSS Only Dark/Light Theme</h1>
+    <p>Apr 5, 2023</p>
 
-    <p>This is <em>so</em> <strong>AWESOME</strong> and I hope it works!</p>
+    <h2>Is It Even Possible?</h2>
+<p>My goal with this web project, is to empliment a dark/light theme with as little CSS as possible.</p>
+<p>*Browsers now support a default dark and light theme that can be turned on based on the users system theme.</p>
+<h3>Here Is the Folder Structure:</h3>
+<pre><code>-- project folder
+  -- index.html
+  -- style.css
+
+</code></pre>
+<h3>Here Is the CSS:</h3>
+<pre><code class="language-css">
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+</code></pre>
+<p>*The CSS that is highlighted lightblue is the main ingredient. These rules, <code>color-scheme: light</code> or <code>color-scheme: dark</code> will change the page theme on their own, but, to honor the users system default setting we can have those rules nested inside a media query called <code>prefers-color-scheme</code>. So, when the system is set to dark, the <code>color-scheme</code> will be set to dark and the same for light.</p>
 
     
 </article>

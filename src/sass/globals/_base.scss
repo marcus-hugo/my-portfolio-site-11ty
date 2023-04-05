@@ -76,6 +76,11 @@ a:focus-visible {
   outline-offset: 7px;
 }
 
+:is(p) a {
+  text-decoration: underline;
+  color: var(--ul-clr);
+}
+
 .site__title {
   position: relative;
 }

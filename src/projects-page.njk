@@ -5,7 +5,22 @@ layout: "base.njk"
 
 <h1 class="site__title">{{ title }}</h1>
 <h2>Here's what I've been working on lately!</h2>
+<h3>Freelance Work</h3>
+<ul class="projects flex-row">
+   <li>
+      <article class="project flex-col snippet">
+         <img src="/assets/images/screenshot-ptah-website.webp" width="578" height="325" alt=""></img>
+         <h3 class="project__title"><a href="">grandkreweofptah.com</a></h3>
+         <p>Wordpress website for a non-profit using the Astra theme and custom CSS.</p>
+         
+         <div class="links-wrapper flex-row gap-1rem">
+               <a href="https://grandkreweofptah.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+         </div>
+      </article>
+   </li>
+</ul>
 
+<h3>Personal Projects</h3>
 <ul class="projects flex-row">
 {% for project in collections.project %}
    {% include 'project-snippet.njk' %}
