@@ -126,7 +126,7 @@ p {
   max-width: 65ch;
   line-height: 1.5;
   margin: 0.5rem 0;
-  padding: 0 0.7rem;
+  padding: 0 1rem;
 }
 
 *::selection {
@@ -155,6 +155,10 @@ a:focus-visible {
 :is(p) a {
   text-decoration: underline;
   color: var(--ul-clr);
+}
+
+pre {
+  padding: 0 1rem;
 }
 
 .site__title {
@@ -322,6 +326,7 @@ p.light-theme {
 }
 .header {
   box-shadow: 0px 0px 2px -1px;
+  padding: 1rem 0;
   justify-content: space-between;
 }
 .header__logo {
@@ -420,6 +425,7 @@ p.light-theme {
 @media (min-width: 768px) {
   .header {
     justify-content: space-between;
+    padding: 0;
   }
   .nav {
     transform: translateX(0);
@@ -548,17 +554,17 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   padding: 0 1rem;
   gap: 1rem;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .post {
-  background: var(--card-bg);
   color: var(--card-clr);
   padding: 1rem 0.7rem;
 }
 .post__title {
   text-align: left;
   font-size: 2rem;
-  padding: 0 0.7rem;
+  margin: 2rem 0 1rem 0;
   color: var(--clr-accent);
 }
 .post__date {
@@ -609,6 +615,10 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   margin: 1rem 0 0 0;
   opacity: 0;
   animation: fade-in 300ms ease-in 2500ms forwards;
+}
+
+.hero__text:last-of-type {
+  text-align: left;
 }
 
 .hero__ul {

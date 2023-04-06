@@ -1,13 +1,13 @@
 ---
-title: "My Blog"
+title: "Welcome to My Blog Page!"
 layout: "base.njk"
 ---
 
-<h1 class="site__title">{{ title }}</h1>
-<h2>Recent Posts</h2>
+<h1>{{ title }}</h1>
+<h2>Hope you enjoy reading and find something useful!</h2>
 
-<ul class="posts flex-row">
-    {% for post in collections.post %}
+<ul class="posts">
+    {% for post in collections.post | reverse %}
         {% include 'article-snippet.njk' %}
     {% endfor %}
 </ul>

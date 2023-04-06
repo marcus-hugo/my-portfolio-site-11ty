@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <title>CSS Only Dark/Light Theme</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
@@ -75,20 +76,7 @@
 
 </code></pre>
 <h3>Here Is the CSS:</h3>
-<pre><code class="language-css">
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: light;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-</code></pre>
+<pre class="language-css"><code class="language-css"><br><span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> light<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token selector">html</span> <span class="token punctuation">{</span><br>    <span class="token property">color-scheme</span><span class="token punctuation">:</span> light<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> dark<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><br>  <span class="token selector">html</span> <span class="token punctuation">{</span><br>    <span class="token property">color-scheme</span><span class="token punctuation">:</span> dark<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br></code></pre>
 <p>*The CSS that is highlighted lightblue is the main ingredient. These rules, <code>color-scheme: light</code> or <code>color-scheme: dark</code> will change the page theme on their own, but, to honor the users system default setting we can have those rules nested inside a media query called <code>prefers-color-scheme</code>. So, when the system is set to dark, the <code>color-scheme</code> will be set to dark and the same for light.</p>
 
     

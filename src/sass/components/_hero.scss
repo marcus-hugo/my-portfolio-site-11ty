@@ -41,6 +41,9 @@
   animation: fade-in 300ms ease-in 2500ms forwards;
 }
 
+.hero__text:last-of-type {
+  text-align: left;
+}
 .hero__ul {
   color: var(--ul-clr);
   opacity: 0;

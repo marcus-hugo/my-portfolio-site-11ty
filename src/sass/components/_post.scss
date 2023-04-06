@@ -1,12 +1,12 @@
 .post {
-  background: var(--card-bg);
+  // background: var(--card-bg);
   color: var(--card-clr);
   padding: 1rem 0.7rem;
 
   &__title {
     text-align: left;
     font-size: 2rem;
-    padding: 0 0.7rem;
+    margin: 2rem 0 1rem 0;
     color: var(--clr-accent);
   }
 

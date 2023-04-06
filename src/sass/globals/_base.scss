@@ -50,7 +50,7 @@ p {
   max-width: 65ch;
   line-height: 1.5;
   margin: 0.5rem 0;
-  padding: 0 0.7rem;
+  padding: 0 1rem;
 }
 
 *::selection {
@@ -81,6 +81,9 @@ a:focus-visible {
   color: var(--ul-clr);
 }
 
+pre {
+  padding: 0 1rem;
+}
 .site__title {
   position: relative;
 }
